@@ -1,0 +1,190 @@
+@font-face {
+  font-family: "Perfect_DOS_VGA_437";
+  src: url('../font/Perfect_DOS_VGA_437.ttf') format('truetype');
+}
+/* RESET */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+html, body { overflow-x: hidden; } 
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  background-color: #0202A7;
+  font-family: "Perfect_DOS_VGA_437", monospace;
+  color: white;
+}
+header, footer, .days {
+  z-index: 1;
+}
+.row {
+  height: 100%;
+  margin: 0;
+}
+button.btn.btn-light {
+  color: #0202A7;
+  border-radius: 0;
+}
+.rowHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.titleProgramme, span {
+  font-size: 0.8rem;
+}
+.oeuvreMouv{
+  cursor: url(../images/logo/logotitle.png), pointer;
+}
+a {
+  color: white;
+  text-transform: uppercase;
+}
+#logo {
+  height: 85px;
+}
+.btnLanguage{
+  height: 50%;
+}
+/*Formulaire*/
+input{
+  border-radius: 0px;
+  width: 12rem;
+}
+.pForm{
+  text-align: center;
+  margin-bottom: 1rem
+}
+.labelForm{
+  width: 5rem;
+}
+.btnSend{
+  color: #0202A7;
+}
+/* taille des image page de programmation */
+img {
+  height: 120px;
+}
+.img2Day2, .img3Day3{
+  height: 250px;
+}
+.img1Logo .img4Day3 {
+  height: 200px;
+}
+.img2, .img1Day3, .img4Day2 {
+  height: 150px;
+}
+.img1Day2, .img3Day2, .img2Day3 {
+  height: 120px;
+}
+/* ---------------------------PAGE ACCUEIL--------------------------------- */
+#accueil, #programme, #infosPratiques {
+  color: #0202A7;
+  background-color: white;
+  }/*liens nav*/
+  /*Régulation des tailles des éléments de la page*/
+  #containerGeneralHome{
+    height: 100vh;
+  }
+  div#containerGeneralHome header{
+    height: 10vh;
+  }
+  .bodyHome {
+    height: 70vh;
+  }
+  div#containerGeneralHome footer{
+    height: 20vh;
+  }
+  /* Menu navigation */
+  div.row nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50vh;
+    list-style: none;
+    position: fixed;
+    margin-top: 5rem;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+  div.row nav ul li.active a {
+    color: #0202A7;
+    background-color: white;
+  }
+  /* Pied de page */
+  .socialNetwork {
+    background-color: white;
+    color: #0202A7;
+    border-radius: 0;
+  }
+  .socialNetwork {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .newsLetters {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  /* ---------------------------PAGE PROGRAMME--------------------------------- */
+  /* header */
+  .titleProgramme {
+    color: white;
+    text-align: center;
+  }
+  div#eventDay.container-fluid div#firstDay p span {
+    font-size: 0.8rem;
+    color: #f2e8e8;
+  }
+  /*programme par jour */
+  #eventDay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+  }
+  .days {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+  }
+  .titleEvent, h2 {
+    margin-bottom: 1rem;
+  }
+  .dateEvent, h2 {
+    font-size: 1.5rem;
+  }
+  /* ---------------------------PAGE INFOS PRATIQUES--------------------------------- */
+  .maps{
+    height: 10rem;
+  }
+  .infoBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+  }
+  em{
+    text-decoration: none;
+    background-color: white;
+    color: #0202A7;
+    font-size: 1.2rem;
+  }
+  .mailInfo{
+    text-transform:none;
+  }
+  .fas{
+    color: white;
+    margin-right: 1rem;
+  }
+  .endInfo{
+    text-align: center;
+  }

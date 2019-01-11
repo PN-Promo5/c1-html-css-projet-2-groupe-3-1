@@ -1,0 +1,101 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+  body {
+    font-size: 0.8rem;
+  }
+  .container {
+    padding: 0;
+  }
+  .navPage {
+    text-align: end;
+  }
+  div.row nav ul {
+    position: static;
+    height: 25vh;
+  }
+  html body div#containerGeneralHome section.container.bodyHome div.row nav.col-lg-3.col-xs-12.mb-md-4.pl-0{
+    height: 0;
+    margin-top: 7rem;
+  }
+  html body div#containerGeneral section.container.d-flex {
+    flex-wrap: wrap;
+  }
+  .navPage {
+    text-align: end;
+  }
+  div.row nav ul {
+    position: static;
+    height: 25vh;
+  }
+  html body div#containerGeneralHome section.container.bodyHome div.row nav.col-lg-3.col-xs-12.mb-md-4.pl-0{
+    height: 0;
+    margin-top: 7rem;
+  }
+  .dateEvent, h2 {
+    font-size: 1rem;
+  }
+  span {
+    font-size: 0.5rem;
+  }
+
+  /* Placement des images */
+  .img2Day2, .img3Day3{
+    height: 125px;
+  }
+  .img1Logo .img4Day3 {
+    height: 100px;
+  }
+  .img2, .img1Day3, .img4Day2 {
+    height: 85px;
+  }
+  .img1Day2, .img3Day2, .img2Day3 {
+    height: 70px;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  body {
+    font-size: 0.8rem;
+  }
+  .container {
+    padding: 0;
+  }
+  .navPage {
+    text-align: end;
+  }
+  #containerGeneralHome{
+  height: none;
+}
+div#containerGeneralHome header{
+  height: none;
+}
+.bodyHome {
+  height: none;
+}
+  div.row nav ul {
+    position: static;
+    height: 25vh;
+  }
+  html body div#containerGeneral section.container.d-flex {
+    flex-wrap: wrap;
+  }
+  .dateEvent, h2 {
+    font-size: 1rem;
+  }
+  span {
+    font-size: 0.5rem;
+  }
+  .img2Day2, .img3Day3{
+    height: 300px;
+  }
+  .img1Logo .img4Day3 {
+    height: 250px;
+  }
+  .img2, .img1Day3, .img4Day2 {
+    height: 200px;
+  }
+  .img1Day2, .img3Day2, .img2Day3 {
+    height: 100px;
+  }
+}

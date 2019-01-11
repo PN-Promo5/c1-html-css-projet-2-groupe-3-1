@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <link rel="icon" href="images/logo/logoTitle.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <title>Festival - Le Numérique Hanté</title>
+</head>
+
+<body onload="Ini(); setInterval('Nxt()',tim);">
+  <div id="containerGeneral">
+    <!-- Haut de page / header -->
+    <header class="container">
+      <div class="row rowHeader">
+        <div class="col-xs-2 col">
+          <a href="index.html"><img id="logo" src="images/logo/logo_V1.png" alt="logo Numérique Hanté"></a>
+        </div>
+        <div class="d-flex flex-row-reverse order-sm-2 order-lg-3">
+          <button type="button" class="btnLanguage btn btn-light mt-2">EN</button>
+        </div>
+        <div class="titleProgramme col-12 d-flex flex-column col-lg-8 order-sm-3 order-lg-2">
+          <h1>Infos Pratiques</h1>
+        </div>
+      </div>
+    </header>
+    <!-- Corp de la page / Body page -->
+    <div class="container">
+      <div class="row">
+        <nav class="col-lg-3 col-xs-12 mb-5 pl-0">
+          <ul class="navPage mt-md-0">
+            <li class="mb-md-2"><a href="index.html">Accueil</a></li>
+            <li class="mb-md-2"><a href="programme.html">Programme</a></li>
+            <li class="mb-md-2"><a id="infos-pratiques" href="infosPratiques.html">Infos pratiques</a></li>
+            <li class="mb-md-2"><a href="#">Mentions legales</a></li>
+          </ul>
+        </nav> 
+        <aside id="asideCnt" class="col-lg-9 col-12 mb-4">
+          <div class="infoBody">
+            <p>
+              L'evenement se deroule du <em>vendredi 25 au dimanche 27 Octobre 2019</em>.
+              Vous pouvez participer a chaque journee pour un <em>tarif de 8Euros/Jour</em>.
+              La <em>restauration</em> sur place propose un <em>petit dejeuner</em> de <em>9h00 a 10h00</em> et un <em>dejeuner</em> de <em>12h00 a 14h30</em>
+              <br>
+              Le lieu de rdv est le <em>Hangar J - 23 Place de la Joliette, 13226 Marseille</em></p>
+              <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.456470270842!2d5.363284814880909!3d43.304702979134845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c0e930e78413%3A0xf6d6449b462d662c!2s23+Place+de+la+Joliette%2C+13002+Marseille!5e0!3m2!1sfr!2sfr!4v1546976093130"
+              frameborder="0" style="border:0" allowfullscreen>
+            </iframe>
+            <div class="frame">
+              <p class="endInfo">
+                <i class="fas fa-car"></i> Autoroute A50 sorti terrasse du port / Tunel Prado Carenage sorti Joliette
+                <br>
+                <i class="fas fa-bus"></i>Bus 49 arret Gare Maritime
+                <br>
+                <i class="fas fa-subway"></i>Metro M2 arret Joliette
+                <br>
+                Une question ? <i class="fas fa-phone"></i><em>04 04 04 05 05</em> <br>
+                <div class="container text-center" id="formulaire">
+                  <p id="titreContact" class="text-center" ><i class="far fa-envelope mr-1"></i><a class="mailInfo" href="lenumeriquehante@evenement.fr"><em>lenumeriquehante@evenement.fr</em></a></p>
+                </p>
+              </div>
+              <form action="#" method="post" class="mt-3">
+                <p class="pForm">
+                  <label class="labelForm"for="prenom">Prenom </label>
+                  <input type="text" name="prenom" placeholder="Michelle" id="prenom" required>
+                </p>
+                <p class="pForm">
+                  <label class="labelForm"for="nom">Nom</label>
+                  <input type="text" name="nom" placeholder="Lacausa" id="nom" required>
+                </p>
+                <p class="pForm">
+                  <label class="labelForm"for="email">Email</label>
+                  <input type="email" name="email" placeholder="mlacausa@gmail.com" id="email" required>
+                </p>
+                <p class="pForm">
+                  <label for="textReclam"></label><br>
+                  <textarea name="textReclam" rows="4" cols="40" placeholder="Inscrire votre demande:" id="textReclam"></textarea>
+                </p>
+                <div class="btnSend">
+                  <p class="pForm">
+                    <input type="submit" name="validation" value="Envoyer la demande" class="btnSend">
+                  </p>
+                </div>
+              </form>
+            </aside>
+          </div>
+        </div>
+        <!---Pied de la page -------------------------------------->
+        <footer class="container">
+          <div class="row">
+            <div class="newsLetters col-12">
+              <button type="button" class="btn btn-light">Inscription NewsLetters</button>
+            </div>
+            <div class="btn-group d-flex justify-content-center col-12" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-light">Facebook</button>
+              <button type="button" class="btn btn-light">Twitter</button>
+              <button type="button" class="btn btn-light">Instagram</button>
+              <button type="button" class="btn btn-light">Youtube</button>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    </html>
