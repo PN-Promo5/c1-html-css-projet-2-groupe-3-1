@@ -1,0 +1,113 @@
+body {
+  background: grey;
+  animation: color-me-in 5s;
+animation-iteration-count: infinite;
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: black;
+  font-size: 120%;
+  font-weight: 400;
+  text-align: center;
+  color: black;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+@keyframes color-me-in {
+  /* You could think of as "step 1" */
+  0% {
+    background:  #cccccc;
+  }
+  /* You could think of as "step 2" */
+  100% {
+    background: white;
+  }
+}
+
+/* CURSOR */
+
+
+h2 {
+font-size: 220%;
+}
+
+
+.container {
+width: 100%;
+margin: auto;
+}
+
+.blinkCursor {
+animation-name: blinkCursor;
+animation-iteration-count: infinite;
+animation-timing-function: cubic-bezier(1,0,0,1);
+animation-duration: 0.75s;
+display: inline-block;
+width: 4px;
+height: 50px;
+margin-left: 7px;
+box-shadow: 0 0 10px rgba(255, 99, 71, .5);
+background: black;
+}
+
+@keyframes blinkCursor {
+from { opacity: 1.0 } to { opacity: 0.0 }
+}
+
+.link-footer {
+  color: black;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+
+
+#fly-in h1 {
+  font-size: 4em;
+  margin: 10vh auto;
+  height: 10vh;
+  text-transform: uppercase;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  left: 10vw;
+  animation: switch 5s linear infinite;
+}
+
+
+
+@keyframes switch {
+    0% { opacity: 0;filter: blur(20px); transform:scale(12)}
+    30% { opacity: 1;filter: blur(0); transform:scale(1)}
+    60% { opacity: 1;filter: blur(0); transform:scale(.9)}
+    90% { opacity: 0;filter: blur(10px); transform:scale(.1)}
+    100% { opacity: 0}
+}
+
+
+.link-website {
+
+  color: black;
+  text-decoration: underline;
+
+}
+
+  a:hover {
+    color : black;
+  }
+
+  .navbar-default{
+background-color: transparent !important;
+  }
+
+
+  h5 {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+  }
+
+.title-infos {
+  font-size: 35px;
+}

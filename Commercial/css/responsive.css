@@ -1,0 +1,37 @@
+@media only screen and (max-width: 600px) {
+
+#fly-in h1 {
+animation : none;
+opacity : 1;
+font-size: 30px;
+}
+
+.accueil-picture {
+  width: 100%;
+}
+
+.link-website {
+  font-size: 25px;
+}
+
+.blinkCursor {
+  animation: none;
+  display: none;
+}
+
+iframe{
+  width: 100%
+}
+
+h1 {
+  font-size: 30px;
+}
+
+div.link-web h2 {
+  text-align: center !important;
+    margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+
+}
