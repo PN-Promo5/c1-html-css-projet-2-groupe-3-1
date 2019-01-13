@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="CSS/responsive.css">
+
+    <title>Infos pratiques</title>
+  </head>
+  <body>
+    <div class="pageScroll canvasContainer">           <!-- ------------------ CANVAS DU HAUT ET LIENS ------------------------------- -->
+      <canvas id="canvas"></canvas>
+
+      <div id="dayLinks"></div>
+    </div>
+    
+    <a href="index.html" id="return1"></a>
+    <a href="index.html" id="return2"></a>
+
+
+    <!-- ---------------------------------------------------------------------------- INFOS PARTIE 1 ------------------------------------------------------- -->
+
+
+    <div class="container-fluid infosSections pt-5 text-white" id="infos1">
+      <canvas class="canvasInfos"></canvas>
+
+      <div class="row py-5">
+        <div class="col-3 text-center d-flex flex-column justify-content-between">
+          <h3>T</h3>
+          <h3>A</h3>
+          <h3>R</h3>
+          <h3>I</h3>
+          <h3>F</h3>
+          <h3>S</h3>
+        </div>
+
+        <div class="col-8 py-3">
+          <h2 class="text-center mb-5 pb-3 sectionTitle">Tarifs d'entrée</h2>
+
+          <div class="my-5 margin-0-responsive">
+            <ul class="priceList d-flex flex-row flex-wrap my-5 justify-content-between align-items-center margin-0-responsive">
+              <li>Tarif standard journée : <span class="price">8</span> €</li>
+              <li>Tarif réduit journée* : <span class="price">6</span> €</li>
+              <li>Pass standard 3 jours : <span class="price">20</span> €</li>
+              <li>Pass réduit 3 jours* : <span class="price">15</span> €</li>
+            </ul>
+            <a href="#" target="_blank" class="infosButtons btn btn-block">BILLETTERIE</a>
+          </div>
+
+          <p class="mt-5 pt-3 font-italic margin-0-responsive">*Tarif réduit sur présentation d'une carte sénior ou étudiant.<br>L'entrée au festival est gratuite pour les enfants de moins de 8 ans et pour les accompagnateurs des personnes en situation de handicap (un seul accompagnateur par personne) sur présentation de la carte d’invalidité portant l’une des mentions suivantes : "besoin d’accompagnement" ou "cécité".</p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- ---------------------------------------------------------------------------- INFOS PARTIE 2 ------------------------------------------------------- -->
+
+    <div class="container-fluid infosSections pt-5 text-white" id="infos2">
+      <canvas class="canvasInfos"></canvas>
+
+      <div class="row py-5">
+        <div class="col-8 offset-1 py-5">
+          <h2 class="text-center mb-5 pb-3 sectionTitle">Venir à l'évènement</h2>
+
+          <div class="row my-5 margin-0-responsive">
+            <div class="col-12">
+              <div id="mapid"></div>
+            </div>
+
+            <div class="col-12 mt-5">
+              <div class="row">
+                <div class="col-md-6 text-center">
+                  <h4 class="pt-1">Hangar J1</h4>
+                  <p>23 Place de la Joliette, 13226 Marseille</p>
+                </div>
+                <div class="col-md-6">
+                  <a href="https://www.google.com/maps/place/Hangar+J1/@43.3034808,5.3608175,17z/data=!3m1!4b1!4m5!3m4!1s0x12c9c1b300000001:0xc9bd888061c8e8bd!8m2!3d43.3034808!4d5.3630062" target="_blank" class="infosButtons btn btn-block">ITINÉRAIRE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="col-3 text-center d-flex flex-column justify-content-between">
+          <h3>V</h3>
+          <h3>E</h3>
+          <h3>N</h3>
+          <h3>I</h3>
+          <h3>R</h3>
+        </div>
+      </div>            <!-- fin row puis container -->
+    </div>
+
+
+    <!-- ---------------------------------------------------------------------------- INFOS PARTIE 3 ------------------------------------------------------- -->
+
+    <div class="container-fluid infosSections pt-5 text-white" id="infos3">
+      <canvas class="canvasInfos"></canvas>
+
+      <div class="row py-5">
+        <div class="col-3 text-center d-flex flex-column justify-content-between">
+          <h3>C</h3>
+          <h3>O</h3>
+          <h3>N</h3>
+          <h3>T</h3>
+          <h3>A</h3>
+          <h3>C</h3>
+          <h3>T</h3>
+        </div>
+
+        <div class="col-8 py-3">
+          <h2 class="text-center mb-5 pb-3 sectionTitle">Nous contacter</h2>
+
+            <form class="my-5 py-3 margin-0-responsive">
+              <div class="form-row">
+                <div class="col">
+                  <input type="text" class="form-control rounded-0 border-0" placeholder="NOM">
+                </div>
+                <div class="col">
+                  <input type="email" class="form-control rounded-0 border-0" placeholder="EMAIL">
+                </div>
+              </div>
+              <div class="form-row my-4">
+                <div class="col">
+                  <textarea class="form-control rounded-0 border-0" id="exampleFormControlTextarea1" rows="3" placeholder="MESSAGE"></textarea>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <button type="submit" class="btn btn-lg btn-block mb-2 infosButtons">ENVOYER</button>
+                </div>
+              </div>
+            </form>
+
+            <ul class="networkList d-flex flex-wrap flex-md-nowrap justify-content-around text-center my-3">
+              <li><a href="#" target="_blank" class="btn btn-lg btn-block infosButtons">FACEBOOK</a></li>
+              <li><a href="#" target="_blank" class="btn btn-lg btn-block infosButtons">TWITTER</a></li>
+              <li><a href="#" target="_blank" class="btn btn-lg btn-block infosButtons">INSTAGRAM</a></li>
+            </ul>
+
+
+        </div>                <!-- fin col-8 -->
+      </div>            <!-- fin row puis container -->
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+   <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+   crossorigin=""></script>
+    <script src="js/leaflet-providers.js"></script>
+
+  <script src="JS/canvasFunctions.js"></script>
+  <script src="JS/infos.js"></script>
+</html>

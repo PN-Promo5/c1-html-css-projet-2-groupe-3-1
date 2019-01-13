@@ -1,0 +1,178 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	
+	.daysEventTitle
+	{
+		font-size: 1.1rem;
+	}
+
+	.dailyProgram
+	{
+		height: auto;
+		margin-top: 50px;
+	}
+	.infosSections
+	{
+		height: auto;
+	}
+
+	.dailyProgram p
+	{
+		font-size: 0.8rem;
+	}
+	.verticalHours
+	{
+		font-size: 1.1rem;
+	}
+
+	.canvasDaysContainer, .canvasDays
+	{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	.dailyProgramContent
+	{
+		background: rgba(0,0,0,0.8);
+		z-index: 80;
+	}
+	div.daysEvents
+	{
+		display: block;
+		margin-bottom: 50px;
+	}
+
+	#return1, #return2, .price, .infosButtons
+	{
+		font-size: 1.2rem;
+	}
+
+	.priceList li
+	{
+		font-size: 1rem;
+	}
+	h2.sectionTitle
+	{
+		margin-bottom: 0px !important;
+		font-size: 1.5rem;
+	}
+	.margin-0-responsive
+	{
+		margin-top: 0px !important;
+		margin-bottom: 0px !important;
+	}
+	p
+	{
+		font-size: 0.6rem;
+	}
+	.alignBetweenResponsive
+	{
+		justify-content: space-between;
+	}
+
+	}
+
+	/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (orientation: landscape) { 
+  	.canvasDaysContainer, .canvasDays
+	{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+  	.dailyProgram, .infosSections
+	{
+		height: auto;
+	}
+	div.daysEvents
+	{
+		display: block;
+		margin-bottom: 50px;
+	}
+	.dailyProgramContent
+	{
+		background: rgba(0,0,0,0.8);
+		z-index: 80;
+	}
+	#return1, #return2, .price, .infosButtons
+	{
+		font-size: 1.2rem;
+	}
+
+	.priceList li
+	{
+		font-size: 1rem;
+	}
+	h2.sectionTitle
+	{
+		margin-bottom: 0px !important;
+		font-size: 1.5rem;
+	}
+	.margin-0-responsive
+	{
+		margin-top: 0px !important;
+		margin-bottom: 0px !important;
+	}
+	p
+	{
+		font-size: 0.6rem;
+	}
+}
+
+/**********************************************************************************************************************************************************************/
+/**********************************************************************************************************************************************************************/
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+	.daysEventTitle
+	{
+		font-size: 1.2rem;
+	}
+	.dailyProgram
+	{
+		height: auto;
+		margin-top: 50px;
+	}
+	.dailyProgram p
+	{
+		font-size: 1rem;
+	}
+	.verticalHours
+	{
+		font-size: 1.1rem;
+	}
+
+	.canvasDaysContainer, .canvasDays
+	{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	.dailyProgramContent
+	{
+		background: rgba(0,0,0,0.8);
+		z-index: 80;
+	}
+	.daysEvents
+	{
+		display: block;
+		margin-bottom: 50px;
+	}
+
+	#return1, #return2
+	{
+		font-size: 2rem;
+	}
+
+	}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  /* Styles */
+  .container {
+    width: 100%;
+  }
+}

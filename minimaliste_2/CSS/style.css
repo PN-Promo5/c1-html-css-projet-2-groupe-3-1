@@ -1,0 +1,259 @@
+@keyframes fadeIn
+{
+	0%
+	{
+		opacity: 0;
+	}
+	100%
+	{
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOut
+{
+	0%
+	{
+		opacity: 1;
+	}
+	100%
+	{
+		opacity: 0;
+	}
+}
+
+@keyframes borderFadeIn
+{
+	0%
+	{
+		border: 1px solid transparent;
+	}
+	100%
+	{
+		border: 1px solid white;
+	}
+}
+
+
+
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+html, body
+{
+	background: black;		
+	font-family: sans-serif;
+	scroll-behavior: smooth;
+}
+
+
+#bodyHome, #htmlHome
+{
+	height: 100%;
+	overflow: hidden;
+}
+
+#canvas
+{
+	background: black;	
+	z-index: 10;
+}
+
+#return1, #return2
+{
+	position: fixed;
+	top: 5px;
+	color: white;
+	font-size: 1.5rem;
+	z-index: 100;
+	opacity: 0;
+	padding: 3px 5px;
+	border: 1px solid white;
+	background: black;
+}
+
+#return1
+{
+	left: 5px;
+}
+
+#return2
+{
+	right: 5px;
+}
+
+#return1:hover, #return2:hover
+{
+	text-decoration: none;
+}
+
+.fadeIn
+{
+	animation: fadeIn 2s forwards;
+}
+.fadeOut
+{
+	animation: fadeOut 1s forwards;
+}
+
+
+/* ******************************* PAGE D'ACCUEIL LIENS *******************************/
+
+.topLinks
+{
+	text-align: center;
+	transition: 0.4s;
+	margin-bottom: 0px;	
+}
+
+.topLinks a
+{
+	display: block;
+	text-decoration: none;
+	color: transparent;
+}
+
+.topLinks:hover
+{
+	background-color: black;
+}
+
+#mainContent, #dayLinks
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 50;
+}
+
+/* *********************************************** PROGRAMMATION & INFOS ********************************** */
+
+.canvasContainer					/* ajout d'un container pour ne pas garder overflow hidden au body (empêche de scroll en bas de la page), sans ça scroll latéral */
+{
+	width: 100%;
+	height: 100%;
+	background: black;
+	overflow: hidden;
+	line-height: 0;					/* sans ça un écart en bas de quelques px */
+}
+
+/* ********************************************** JOURS ******************************************** */
+.canvasDays
+{
+	background: black;
+	display: block;
+}
+
+.verticalHours
+{
+	width: 1rem;
+}
+
+.dailyProgram, .infosSections
+{
+	position: relative;
+	height: 100vh;
+	background: black;
+	color: white;
+}
+
+.dailyProgram p
+{
+	font-size: 1.3rem;
+	margin-bottom: 0px;
+	line-height: 2;
+}
+
+.dailyProgram h5
+{
+	margin-bottom: 5px;
+}
+
+.whiteLineX
+{
+	width: 0%;
+	height: 1px;
+	background-color: white;
+}
+
+
+/* ************************************************** INFOS ****************************** */
+.infosSections
+{
+	overflow: hidden;
+}
+
+.canvasInfos
+{
+	background: transparent;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 50;
+	pointer-events: none;
+}
+
+.priceList
+{
+	list-style-type: none;
+}
+
+.priceList li
+{
+	background: black;
+	font-size: 1.5rem;
+	padding: 10px 15px;
+	font-weight: bold;
+}
+
+.price
+{
+	font-size: 1.8rem;
+}
+
+.infosButtons
+{
+	font-size: 1.5rem;
+	color: white;
+	padding: 10px 20px;
+	border: 1px solid transparent;
+	border-radius: 0px;
+	transition: 0.3s;
+}
+
+.borderFadeIn
+{
+	animation: borderFadeIn 2s forwards;
+}
+
+.infosButtons:hover
+{
+	background: white;
+	color: black;
+	text-decoration: none;
+	border: 1px solid white;
+}
+
+
+/* ************************************************** INFOS 2 ****************************************** */
+#mapid
+{
+	height: 180px;
+	width: 100%;
+	z-index: 10;
+}
+
+.networkList
+{
+	list-style-type: none;
+}
+
+.networkList li
+{
+	width: 100%;
+}

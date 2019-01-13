@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Programmation</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="CSS/responsive.css">
+</head>
+<body>
+	<div class="pageScroll canvasContainer">					  <!-- ------------------ CANVAS DU HAUT ET LIENS ------------------------------- -->
+		<canvas id="canvas"></canvas>
+
+		<div id="dayLinks"></div>
+	</div>
+
+	<a href="index.html" id="return1"></a>
+    <a href="index.html" id="return2"></a>
+
+
+	<div class="container-fluid dailyProgram pageScroll" id="day1"> <!-- -------------------------- JOUR 1 ----------------------------------- -->
+		<div class="row">
+
+			<div class="col-xl-3 canvasDaysContainer">
+				<canvas class="canvasDays"></canvas>
+			</div>
+
+			<div class="col-xl-9 d-flex flex-column justify-content-around py-2 dailyProgramContent">			<!-- début contenu texte à droite du canvas -->
+
+				<div class="row d-flex justify-content-around">						<!-- début moitié du haut -->
+					<div class="col-lg-5 col-md-6 d-flex border-right border-light daysEvents">
+						
+						<div class="d-flex flex-column justify-content-between mr-2 verticalHoursContainer">
+							<h5 class="verticalHours">9</h5>
+							<h5 class="verticalHours">h</h5>
+							<h5 class="verticalHours">3</h5>
+							<h5 class="verticalHours">0</h5>
+							<h5 class="verticalHours">-</h5>
+							<h5 class="verticalHours">1</h5>
+							<h5 class="verticalHours">1</h5>
+							<h5 class="verticalHours">h</h5>
+						</div>
+						<div class="d-flex flex-column justify-content-between">  
+							<h3 class="daysEventTitle">Conférence</h3>
+							<p>"Que se passe-t-il avec nos données personnelles ?"</p>
+							<p>Jerome Bahas</p>
+						</div>
+					</div>
+
+					<div class="col-lg-5 col-md-6 d-flex daysEvents alignBetweenResponsive">
+						
+						<div class="d-flex flex-column justify-content-between mr-2 verticalHoursContainer order-12 order-md-1">
+							<h5 class="verticalHours">1</h5>
+							<h5 class="verticalHours">4</h5>
+							<h5 class="verticalHours">h</h5>
+							<h5 class="verticalHours">-</h5>
+							<h5 class="verticalHours">1</h5>
+							<h5 class="verticalHours">6</h5>
+							<h5 class="verticalHours">h</h5>
+							<h5 class="verticalHours">3</h5>
+							<h5 class="verticalHours">0</h5>
+						</div>
+						<div class="d-flex flex-column justify-content-between order-1 order-md-12">
+							<h3 class="daysEventTitle">Présentation interactive "FPS" - Table ronde 2</h3>
+							<p>Hugo Tarier</p>
+							<p>Amy Wadson</p>
+							<p>Valeria Kariol</p>
+						</div>
+					</div>
+
+				</div>									<!-- fin row moitié du haut -->
+
+
+				<div class="whiteLineX"></div>
+
+
+				<div class="row d-flex justify-content-around">				<!-- début moitié du bas -->
+
+					<div class="col-lg-5 col-md-6 d-flex border-right border-light daysEvents">
+						
+						<div class="d-flex flex-column justify-content-between mr-2 verticalHoursContainer">
+							<h5 class="verticalHours">1</h5>
+							<h5 class="verticalHours">1</h5>
+							<h5 class="verticalHours">h</h5>
+							<h5 class="verticalHours">-</h5>
+							<h5 class="verticalHours">1</h5>
+							<h5 class="verticalHours">2</h5>
+							<h5 class="verticalHours">h</h5>
+							<h5 class="verticalHours">3</h5>
+							<h5 class="verticalHours">0</h5>
+						</div>
+						<div class="d-flex flex-column justify-content-between">
+							<h3 class="daysEventTitle">Suite conférence - Table ronde 1</h3>
+							<p>Jerome Bahas</p>
+							<p>Gilles Muguetr</p>
+							<p>Fabien Mattar</p>
+							<p>Carine Renaud</p> 
+						</div>
+					</div>
+
+					<div class="col-lg-5 col-md-6 d-flex daysEvents alignBetweenResponsive">
+						
+						<div class="d-flex flex-column justify-content-between mr-2 verticalHoursContainer order-12 order-md-1">
+							<h5 class="verticalHours">1</h5>
+							<h5 class="verticalHours">1</h5>
+							<h5 class="verticalHours">h</h5>
+							<h5 class="verticalHours">-</h5>
+							<h5 class="verticalHours">1</h5>
+							<h5 class="verticalHours">7</h5>
+							<h5 class="verticalHours">h</h5>
+						</div>
+						<div class="d-flex flex-column justify-content-between order-1 order-md-12">
+							<h3 class="daysEventTitle">Exposition "Obscurity"</h3>
+							<p>Visite numérique (VR) d'une exposition associant peinture et digital.</p>
+							<p>Pablo Ciri</p>
+						</div>
+					</div>
+
+				</div>							<!-- fin  row de la moitié du bas -->
+			</div>								<!-- fin col-lg-9 -->
+
+		</div>						<!-- fin row section, puis fin container-fluid -->
+	</div>
+
+	
+	<!-- -------------------------------------------------------------------------------------- JOUR 2 -------------------------------------------------------------------------- -->
+
+
+	<div class="container-fluid dailyProgram pageScroll" id="day2">
+		<div class="row">
+
+			<div class="col-xl-9 d-flex flex-column justify-content-around py-2 dailyProgramContent">			<!-- début contenu texte à gauche du canvas -->
+
+				<div class="row d-flex justify-content-around">						<!-- début moitié du haut -->
+					<div class="col-lg-5 col-md-6 d-flex border-right border-light daysEvents">
+						
+						<div class="d-flex flex-column justify-content-between mr-2 verticalHoursContainer">
+							<h5 class="verticalHours">1</h5>
+							<h5 class="verticalHours">3</h5>
+							<h5 class="verticalHours">h</h5>
+							<h5 class="verticalHours">-</h5>
+							<h5 class="verticalHours">1</h5>
+							<h5 class="verticalHours">7</h5>
+							<h5 class="verticalHours">h</h5>
+						</div>
+						<div class="d-flex flex-column justify-content-between">  
+							<h3 class="daysEventTitle">Exposition "Street Ghosts"</h3>
+							<p>Impressions grandeur nature de silhouettes vues sur Google Street Views.</p>
+							<p>Rollin Mailler</p>
+						</div>
+					</div>
+
+					<div class="col-lg-5 col-md-6 d-flex daysEvents alignBetweenResponsive">
+						
+						<div class="d-flex flex-column justify-content-between mr-2 verticalHoursContainer order-12 order-md-1">
+							<h5 class="verticalHours">1</h5>
+							<h5 class="verticalHours">0</h5>
+							<h5 class="verticalHours">h</h5>
+							<h5 class="verticalHours">-</h5>
+							<h5 class="verticalHours">1</h5>
+							<h5 class="verticalHours">2</h5>
+							<h5 class="verticalHours">h</h5>
+						</div>
+						<div class="d-flex flex-column justify-content-between order-1 order-md-12">
+							<h3 class="daysEventTitle">Table ronde 1</h3>
+							<p>Julio Heart</p>						
+							<p>Christophe Ekiel</p>
+						</div>
+					</div>
+
+				</div>									<!-- fin row moitié du haut -->
+
+
+				<div class="whiteLineX"></div>
+
+
+				<div class="row d-flex justify-content-around">				<!-- début moitié du bas -->
+
+					<div class="col-lg-5 col-md-6 d-flex border-right border-light daysEvents">
+						
+						<div class="d-flex flex-column justify-content-between mr-2 verticalHoursContainer">
+							<h5 class="verticalHours">9</h5>
+							<h5 class="verticalHours">h</h5>
+							<h5 class="verticalHours">-</h5>
+							<h5 class="verticalHours">1</h5>
+							<h5 class="verticalHours">7</h5>
+							<h5 class="verticalHours">h</h5>
+						</div>
+						<div class="d-flex flex-column justify-content-between">
+							<h3 class="daysEventTitle">Exposition "Database"</h3>
+							<p>Imprimer des informations enregistrées à l'aide d'un logiciel de reconnaissance faciale</p>
+							<p>Taïs Elher</p>																		
+						</div>
+					</div>
+
+					<div class="col-lg-5 col-md-6 d-flex daysEvents alignBetweenResponsive">
+						
+						<div class="d-flex flex-column justify-content-between mr-2 verticalHoursContainer order-12 order-md-1">
+							<h5 class="verticalHours">1</h5>
+							<h5 class="verticalHours">5</h5>
+							<h5 class="verticalHours">h</h5>
+							<h5 class="verticalHours">-</h5>
+							<h5 class="verticalHours">1</h5>
+							<h5 class="verticalHours">7</h5>
+							<h5 class="verticalHours">h</h5>
+						</div>
+						<div class="d-flex flex-column justify-content-between order-1 order-md-12">
+							<h3 class="daysEventTitle">Table ronde 2</h3>
+							<p>Patrick hagen</p>						
+							<p>Ana Show</p>
+						</div>
+					</div>
+
+				</div>							<!-- fin  row de la moitié du bas -->
+			</div>								<!-- fin col-lg-9 -->
+
+			<div class="col-xl-3 canvasDaysContainer">
+				<canvas class="canvasDays"></canvas>
+			</div>
+
+		</div>						<!-- fin row section, puis fin container-fluid -->
+	</div>
+
+
+	<!-- -------------------------------------------------------------------------------------- JOUR 3 -------------------------------------------------------------------------- -->
+
+
+	<div class="container-fluid dailyProgram pageScroll" id="day3">
+		<div class="row">
+
+			<div class="col-xl-3 canvasDaysContainer">
+				<canvas class="canvasDays"></canvas>
+			</div>
+
+			<div class="col-xl-9 d-flex flex-column justify-content-around py-2 dailyProgramContent">			<!-- début contenu texte à droite du canvas -->
+
+				<div class="row d-flex justify-content-around">						<!-- début moitié du haut -->
+					<div class="col-lg-5 col-md-6 d-flex border-right border-light daysEvents">
+						
+						<div class="d-flex flex-column justify-content-between mr-2 verticalHoursContainer">
+							<h5 class="verticalHours">9</h5>
+							<h5 class="verticalHours">h</h5>
+							<h5 class="verticalHours">-</h5>
+							<h5 class="verticalHours">1</h5>
+							<h5 class="verticalHours">0</h5>
+							<h5 class="verticalHours">h</h5>
+							<h5 class="verticalHours">3</h5>
+							<h5 class="verticalHours">0</h5>
+						</div>
+						<div class="d-flex flex-column justify-content-between">  
+							<h3 class="daysEventTitle">Conférence</h3>
+							<p>"L'avenir de l'art et de sa relation avec le monde réel et virtuel"</p>
+							<p>Eduard Mayo</p>															
+							<p>Ronald Quick</p>
+						</div>
+					</div>
+
+					<div class="col-lg-5 col-md-6 d-flex daysEvents alignBetweenResponsive">
+						
+						<div class="d-flex flex-column justify-content-between mr-2 verticalHoursContainer order-12 order-md-1">
+							<h5 class="verticalHours">1</h5>
+							<h5 class="verticalHours">3</h5>
+							<h5 class="verticalHours">h</h5>
+							<h5 class="verticalHours">3</h5>
+							<h5 class="verticalHours">0</h5>
+							<h5 class="verticalHours">-</h5>
+							<h5 class="verticalHours">1</h5>
+							<h5 class="verticalHours">4</h5>
+							<h5 class="verticalHours">h</h5>
+							<h5 class="verticalHours">3</h5>
+							<h5 class="verticalHours">0</h5>
+						</div>
+						<div class="d-flex flex-column justify-content-between order-1 order-md-12">
+							<h3 class="daysEventTitle">Exposition "Visage numérique"</h3>
+							<p>Personnage virtuel doté d'intelligence artificielle</p>
+							<p>Karine Akimm</p>										
+							<p>Carl Allan</p>
+						</div>
+					</div>
+
+				</div>									<!-- fin row moitié du haut -->
+
+
+				<div class="whiteLineX"></div>
+
+
+				<div class="row d-flex justify-content-around">				<!-- début moitié du bas -->
+
+					<div class="col-lg-5 col-md-6 d-flex border-right border-light daysEvents">
+						
+						<div class="d-flex flex-column justify-content-between mr-2 verticalHoursContainer">
+							<h5 class="verticalHours">1</h5>
+							<h5 class="verticalHours">0</h5>
+							<h5 class="verticalHours">h</h5>
+							<h5 class="verticalHours">3</h5>
+							<h5 class="verticalHours">0</h5>
+							<h5 class="verticalHours">-</h5>
+							<h5 class="verticalHours">1</h5>
+							<h5 class="verticalHours">2</h5>
+							<h5 class="verticalHours">h</h5>
+						</div>
+						<div class="d-flex flex-column justify-content-between">
+							<h3 class="daysEventTitle">Table ronde 1</h3>
+							<p>Eduard Mayo</p>									
+							<p>Carl Allan</p>
+							<p>Ronald Quick</p> 
+							<p>Dany Roulin</p>
+						</div>
+					</div>
+
+					<div class="col-lg-5 col-md-6 d-flex daysEvents alignBetweenResponsive">
+						
+						<div class="d-flex flex-column justify-content-between mr-2 verticalHoursContainer order-12 order-md-1">
+							<h5 class="verticalHours">1</h5>
+							<h5 class="verticalHours">4</h5>
+							<h5 class="verticalHours">h</h5>
+							<h5 class="verticalHours">3</h5>
+							<h5 class="verticalHours">0</h5>
+							<h5 class="verticalHours">-</h5>
+							<h5 class="verticalHours">1</h5>
+							<h5 class="verticalHours">7</h5>
+							<h5 class="verticalHours">h</h5>
+						</div>
+						<div class="d-flex flex-column justify-content-between order-1 order-md-12">
+							<h3 class="daysEventTitle">Table ronde 2</h3>
+							<p>Dany Roulin</p>
+							<p>Carla Belone</p>
+							<p>Daniel Olivary</p>
+							<p>Fernand Ishin</p>
+						</div>
+					</div>
+
+				</div>							<!-- fin  row de la moitié du bas -->
+			</div>								<!-- fin col-lg-9 -->
+
+		</div>						<!-- fin row section, puis fin container-fluid -->
+	</div>
+	
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script src="JS/canvasFunctions.js"></script>
+<script src="JS/programmation.js"></script>
+</html>
