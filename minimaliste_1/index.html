@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="icon" href="img/logo-prog.png">
+  <title>Numérique Hanté - Digital Art Festival</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="index">
+
+  <section class="container-fluid ctn-top">
+    <div class="row mt-1">
+      <article class="col-lg-8 d-none d-sm-block squiggly">
+        <h1 class="small dotted">Numérique hanté</h1>
+      </article>
+
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="anim-title">
+        <defs>
+          <filter id="squiggly-0">
+            <feTurbulence baseFrequency="0.02" numOctaves="3" result="noise" seed="0"/>
+            <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
+          </filter>
+
+          <filter id="squiggly-1">
+            <feTurbulence baseFrequency="0.02" numOctaves="3" result="noise" seed="1"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+          </filter>
+
+          <filter id="squiggly-2">
+            <feTurbulence baseFrequency="0.02" numOctaves="3" result="noise" seed="2"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+          </filter>
+
+          <filter id="squiggly-3">
+            <feTurbulence baseFrequency="0.02" numOctaves="3" result="noise" seed="3"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+          </filter>
+
+          <filter id="squiggly-4">
+            <feTurbulence  baseFrequency="0.02" numOctaves="3" result="noise" seed="4"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+          </filter>
+        </defs>
+      </svg>
+
+      <article class="col-2 offset-9 offset-lg-2">
+        <a href="index.html"><img src="img/logo-home.png" class="logo dotted" alt="Logo"></a>
+      </article>
+    </div>
+  </section>
+
+  <section class="container">
+
+    <div class="row ctn-content">
+
+      <article class="col-12 col-lg-4 order-lg-2 dotted description">
+        <p class="linear-wipe">Et si nos machines accueillaient des fantômes…<br>
+          Et si nous étions nous-mêmes les fantômes de nos machines…<br>
+          Et si le numérique avait créé un entre-monde nous aspirant tous…</p>
+      </article>
+
+      <article class="col-4 col-lg-2 order-lg-1 accordion-content">
+
+        <ul class="list-group dotted p-3 vertical-line">
+          <li class="list-group-item p-1 border-0 bg-transparent"><a href="#" data-toggle="modal" data-target="#exampleModal1" class="text-white">Inauguration</a></li>
+          <li class="list-group-item p-1 border-0 bg-transparent"><a href="#" data-toggle="modal" data-target="#exampleModal2" class="text-white">Editions<br>précédentes</a></li>
+          <li class="list-group-item p-1 border-0 bg-transparent"><a href="#" data-toggle="modal" data-target="#exampleModal3" class="text-white">Billeterie</a></li>
+        </ul>
+
+      </article>
+
+    </div>
+
+  </section>
+
+  <section class="container-fluid fixed-bottom">
+
+    <div class="row">
+
+      <article class="col-6 col-lg-3 dotted">
+        <div class="row">
+          <div class="col-12 col-md-6 dotted pb-2">
+            <p class="text-center mt-4">25|10|19</p>
+          </div>
+          <div class="col-6 d-none d-md-block dotted pt-2 small-clock">
+            <p class="timer text-left mb-0">D
+              0<span id="days" class="mr-4"></span> H
+              <span id="hours"></span>
+            </p>
+            <p class="timer text-left mb-0">M
+              00<span id="minutes" class="mr-4"></span> S
+              <span id="seconds"></span>
+            </p>
+          </div>
+        </div>
+        <div class="row h-100">
+          <div class="col-12 col-md-6 dotted">
+            <p class="text-center mt-4">27|10|19</p>
+          </div>
+          <div class="col-6 d-none d-md-block dotted">
+            <div class="small-clock">
+              <div class="container">
+                <div class="row paris-line">
+                  <div class="col-6">
+                    <p class="text-right"><span class="letter-paris">PARIS </span></p>
+                  </div>
+                  <div class="col-6">
+                    <span id="Paris"></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <p class="text-right"><span class="letter-mexico">MEXICO </span></p>
+                  </div>
+                  <div class="col-6">
+                    <span id="MexicoCity"></span>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <p class="text-right"><span class="letter-london">LONDON </span></p>
+                  </div>
+                  <div class="col-6">
+                    <span id="London"></span>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="col-6 col-lg-3 offset-lg-5 dotted">
+        <ul class="nav menu d-flex align-items-end justify-content-around">
+          <li class="nav-item">
+            <a class="nav-link text-white vertical-line" href="programmation.html">PROGRAMMATION</a>
+          </li>
+          <li class="nav-item mb-1">
+            <a class="nav-link text-white vertical-line" href="#">ACTION CULTURELLE</a>
+          </li>
+          <li class="nav-item mb-1">
+            <a class="nav-link text-white vertical-line" href="infos.html">INFORMATIONS</a>
+          </li>
+        </ul>
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- Modal1 -->
+  <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="modalLabelTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p class="h5" id="modalLabelTitle">Soirée d'ouverture</p>
+                    <p class="h6 mb-2">Sur réservation</p>
+                    <p class="card-text">25|10|19<br>19:30</p>
+                      <a href="#" class="text-white link-modal p-1">Réserver</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal2 -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body p-4">
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                    <p class="h5 pl-3 mb-2">2018</p>
+                    <a href="#" class="text-white link-modal p-1 ml-3">Voir</a>
+                    <p class="h5 pl-3 mt-4 mb-2">2017</p>
+                    <a href="#" class="text-white link-modal p-1 ml-3">Voir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal3 -->
+            <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body p-4">
+                    <button type="button" class="close text-white  ml-2 ml-md-0" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                    <div>
+                      <p class="h5">Le monde des données, face cachée du numérique</p>
+                      <p>25|10|19</p>
+                      <a href="#" class="text-white link-modal p-1">Réserver</a>
+                    </div>
+                    <div class="mt-5">
+                      <p class="h5">Le numérique aurait il créé un nouvel au-delà</p>
+                      <p>26|10|19</p>
+                      <a href="#" class="text-white link-modal p-1">Réserver</a>
+                    </div>
+                    <div class="mt-5">
+                      <p class="h5">Comment le surnaturel flirte avec le numérique</p>
+                      <p>27|10|19</p>
+                      <a href="#" class="text-white link-modal p-1">Réserver</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+<script src="js/script.js" charset="utf-8"></script>
+
+</html>

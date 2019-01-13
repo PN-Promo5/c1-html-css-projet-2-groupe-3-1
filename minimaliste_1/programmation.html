@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="icon" href="img/logo-prog.png">
+  <title>Numérique Hanté - Programmation</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="programmation">
+
+  <section class="container-fluid ctn-top-prog">
+    <div class="row mt-1">
+      <article class="col-lg-8 d-none d-sm-block squiggly">
+        <h1 class="small dotted-prog">NH - Programmation</h1>
+      </article>
+
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="anim-title">
+        <defs>
+          <filter id="squiggly-0">
+            <feTurbulence baseFrequency="0.02" numOctaves="3" result="noise" seed="0"/>
+            <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
+          </filter>
+
+          <filter id="squiggly-1">
+            <feTurbulence baseFrequency="0.02" numOctaves="3" result="noise" seed="1"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+          </filter>
+
+          <filter id="squiggly-2">
+            <feTurbulence baseFrequency="0.02" numOctaves="3" result="noise" seed="2"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+          </filter>
+
+          <filter id="squiggly-3">
+            <feTurbulence baseFrequency="0.02" numOctaves="3" result="noise" seed="3"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+          </filter>
+
+          <filter id="squiggly-4">
+            <feTurbulence  baseFrequency="0.02" numOctaves="3" result="noise" seed="4"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+          </filter>
+        </defs>
+      </svg>
+
+      <article class="col-2 offset-9 offset-lg-2">
+        <a href="index.html"><img src="img/logo-prog.png" class="logo dotted-prog" alt="Logo"></a>
+    </article>
+    </div>
+  </section>
+
+  <section class="container h-50 d-flex flex-column justify-content-center">
+
+<div class="row text-center dotted-prog">
+
+<article class="col-12 col-md-4 mb-5 mb-md-0">
+  <a href="#" data-toggle="modal" data-target=".first-modal" class="linear-wipe prog-link dotted-prog p-3 h1">25|10|19</a>
+</article>
+
+<article class="col-12 col-md-4 mb-5 mb-md-0">
+  <a href="#" data-toggle="modal" data-target=".second-modal" class="linear-wipe dotted-prog p-3 prog-link h1">26|10|19</a>
+</article>
+
+<article class="col-12 col-md-4">
+  <a href="#" data-toggle="modal" data-target=".third-modal" class="linear-wipe dotted-prog p-3 prog-link h1">27|10|19</a>
+</article>
+
+</div>
+
+  </section>
+
+  <section class="container-fluid fixed-bottom fixed-bottom-prog">
+
+    <div class="row">
+
+      <article class="col-6 col-lg-3 dotted-prog">
+        <div class="row">
+          <div class="col-12 col-md-6 dotted-prog pb-2">
+            <p class="text-center mt-4">25|10|19</p>
+          </div>
+          <div class="col-6 d-none d-md-block dotted-prog pt-2 small-clock">
+            <p class="timer text-left mb-0">D
+              0<span id="days" class="mr-4"></span> H
+              <span id="hours"></span>
+            </p>
+            <p class="timer text-left mb-0">M
+              00<span id="minutes" class="mr-4"></span> S
+              <span id="seconds"></span>
+            </p>
+          </div>
+        </div>
+        <div class="row h-100">
+          <div class="col-12 col-md-6 dotted-prog">
+            <p class="text-center mt-4">27|10|19</p>
+          </div>
+          <div class="col-6 d-none d-md-block dotted-prog">
+            <div class="small-clock">
+              <div class="d-flex">
+              <p class="text-right mb-1"><span class="letter-paris">PARIS </span><span id="Paris"></span></p>
+                </div>
+                <div class="d-flex">
+              <p class="text-right mb-1"><span class="letter-mexico">MEXICO </span><span id="MexicoCity"></span></p>
+                </div>
+                <div class="d-flex">
+              <p class="text-right"><span class="letter-london">LONDON </span><span id="London"></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="col-6 col-lg-3 offset-lg-5 dotted-prog">
+        <ul class="nav menu d-flex align-items-end justify-content-around">
+          <li class="nav-item">
+            <a class="nav-link vertical-line prog-link" href="index.html">ACCUEIL</a>
+          </li>
+          <li class="nav-item mb-1">
+            <a class="nav-link vertical-line prog-link" href="#">ACTION CULTURELLE</a>
+          </li>
+          <li class="nav-item mb-1">
+            <a class="nav-link vertical-line prog-link" href="infos.html">INFORMATIONS</a>
+          </li>
+        </ul>
+      </article>
+
+    </div>
+
+  </section>
+
+<!-- Large modal1 -->
+  <div class="modal fade bd-example-modal-lg first-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content modal-content-prog">
+        <div class="modal-body modal-body-prog">
+          <button type="button" class="close close-prog" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div>
+            <p class="h5">Que se passe t-il avec nos données personnelles ?</p>
+            <ul class="list-unstyled vertical-line m-0">
+    <li>9:30</li>
+    <li class="mr-4">G. Bahas</li>
+    </ul>
+          </div>
+          <div>
+            <p class="h5">Table ronde #1</p>
+            <ul class="list-unstyled vertical-line m-0">
+    <li>11:00</li>
+    <li class="mr-4">G. Bahas</li>
+    <li>G. Muguet</li>
+    <li>F. Mattar</li>
+    <li>C. Renaud</li>
+    </ul>
+          </div>
+          <div>
+            <p class="h5">Visite numérique (VR) «Obscurity»</p>
+            <ul class="list-unstyled vertical-line m-0">
+    <li>11:00</li>
+    <li class="mr-4">P. Ciri</li>
+    </ul>
+          </div>
+          <div>
+            <p class="h5">Présentation interactive «FPS»</p>
+            <ul class="list-unstyled vertical-line m-0">
+    <li>14:00</li>
+    <li class="mr-4">H. Tarier</li>
+    <li>A. Wadson</li>
+    <li>V. Kariol</li>
+    </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Large modal2 -->
+  <div class="modal fade bd-example-modal-lg second-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content modal-content-prog">
+        <div class="modal-body modal-body-prog">
+          <button type="button" class="close close-prog ml-2 ml-md-0" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div>
+            <p class="h5">Database : Imprimer des informations enregistrées à l’aide d’un logiciel de reconnaissance faciale</p>
+            <ul class="list-unstyled vertical-line m-0">
+    <li>9:00</li>
+    <li class="mr-4">T. Ehler</li>
+    </ul>
+          </div>
+          <div>
+            <p class="h5">Table ronde #1</p>
+            <ul class="list-unstyled vertical-line m-0">
+    <li>10:00</li>
+    <li class="mr-4">G. Bahas</li>
+    <li>J. Heart</li>
+    <li>C. Ekiel</li>
+    </ul>
+          </div>
+          <div>
+            <p class="h5">Street Ghosts : Impressions de silhouettes</p>
+            <ul class="list-unstyled vertical-line m-0">
+    <li>13:00</li>
+    <li class="mr-4">R. Mailler</li>
+    </ul>
+          </div>
+          <div>
+            <p class="h5">Table ronde #2</p>
+            <ul class="list-unstyled vertical-line m-0">
+    <li>15:00</li>
+    <li class="mr-4">P. Hagen</li>
+    <li>A. Show</li>
+    </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Large modal3 -->
+  <div class="modal fade bd-example-modal-lg third-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content modal-content-prog">
+        <div class="modal-body modal-body-prog">
+          <button type="button" class="close close-prog ml-2 ml-md-0" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div>
+            <p class="h5">L'avenir de l’art et de sa relation avec le monde réel et virtuel</p>
+            <ul class="list-unstyled vertical-line m-0">
+    <li>9:00</li>
+    <li class="mr-4">E. Mayo</li>
+    <li>R. Quick</li>
+    </ul>
+          </div>
+          <div>
+            <p class="h5">Table ronde #1</p>
+            <ul class="list-unstyled vertical-line m-0">
+    <li>10:00</li>
+    <li class="mr-4">E. Mayo</li>
+    <li>C. Allan</li>
+    <li>C. Ekiel</li>
+    <li>R. Quick</li>
+    <li>D. Roulin</li>
+    </ul>
+          </div>
+          <div>
+            <p class="h5">Visage numérique</p>
+            <ul class="list-unstyled vertical-line m-0">
+    <li>13:30</li>
+    <li class="mr-4">K. Akim</li>
+    <li>C. Allan</li>
+    </ul>
+          </div>
+          <div>
+            <p class="h5">Table ronde #2</p>
+            <ul class="list-unstyled vertical-line m-0">
+    <li>14:30</li>
+    <li class="mr-4">D. Roulin</li>
+    <li>C. Belone</li>
+    <li>D. Olivary</li>
+    <li>F. Ishin</li>
+    </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+<script src="js/script.js" charset="utf-8"></script>
+</html>
