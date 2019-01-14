@@ -1,0 +1,75 @@
+html {
+  background-image: url('../img/Pixel.jpg');
+}
+
+body {
+  background-color: #fff0
+}
+
+button, input, optgroup, select, textarea {
+  width: 100%;
+}
+span {
+  color: black;
+  font-size: 80px;
+  letter-spacing: 10px;
+}
+#navbarSupportedContent {
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 19px;
+}
+img {
+  height: 380px;
+}
+
+/*infos*/
+
+
+.information {
+
+}
+.para {
+  letter-spacing: 6px;
+  font-size: 20px;
+  transform: rotate(-2deg);
+}
+.titre {
+  letter-spacing: 3px;
+  font-size: 30px;
+  transform: rotate(2deg);
+}
+
+
+.typing {
+
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typingAnim 6s steps(50);
+  margin: 10px auto;
+  border-left: 6px solid black;
+
+}
+@keyframes typingAnim {
+  from {width:0}
+  to {width:72%}
+}
+
+/*programme*/
+
+.accordionProg {
+  text-align: center;
+}
+
+.programme{
+  padding-left: 15px;
+}
+
+.mobile {
+
+  display: none;
+}
+
+p {
+  font-size: 20px;
+}

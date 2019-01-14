@@ -1,0 +1,50 @@
+@media (max-width: 576px) {}
+
+@media (max-width: 768px) {}
+
+
+@media (max-width: 992px) {}
+
+
+@media (max-width: 1255px) {
+
+  span {
+  font-size: 50px;
+  }
+
+  .desktop{
+  display: none;
+}
+
+.mobile {
+  display: block;
+}
+
+#navbarSupportedContent {
+  text-align: center;
+
+}
+
+.navbar-nav .nav-link {
+text-align: center;
+font-size: 30px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+img {
+    height: 200px;
+}
+
+span {
+    font-size: 40px;
+    text-align: center;
+}
+
+.programme {
+    text-align: center;
+}
+
+}
